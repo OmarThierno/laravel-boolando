@@ -9,6 +9,16 @@
   @vite('resources/js/app.js')
 </head>
 <body>
+  {{-- header   --}}
+  @include('partials.header')
+  {{-- /header  --}}
+
+  {{-- multi pages --}}
   @yield('content')
+  {{-- /multi pages --}}
+
+  {{-- Footer  --}}
+  @include('partials.footer')
+  {{-- /Footer --}}
 </body>
 </html>

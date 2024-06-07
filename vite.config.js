@@ -11,7 +11,8 @@ export default defineConfig({
     ],
     resolve: {
         alias: {
-            '~resources': '/resources/'
+            '~resources': '/resources/',
+            '~fontawesome': path.resolve(__dirname, 'node_models/fortawesome')
         }
     },
 });
