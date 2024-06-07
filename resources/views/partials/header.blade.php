@@ -3,9 +3,18 @@
     <nav>
       <div class="header-left">
         <ul>
-          <li class="active">Donna</li>
-          <li>Uomo</li>
-          <li>Bambini</li>
+          <li class="{{ Request::route()->getName() === 'home' ? 'active' : ''}}">
+            <a href="{{route('home')}}">Home</a>
+          </li>
+          <li class="{{ Request::route()->getName() === 'woman' ? 'active' : ''}}">
+            <a href="{{route('woman')}}">Donna</a>
+          </li>
+          <li class="{{ Request::route()->getName() === 'man' ? 'active' : ''}}">
+            <a href="{{route('man')}}">Uomo</a>
+          </li>
+          <li class="{{ Request::route()->getName() === 'child' ? 'active' : ''}}">
+            <a href="{{route('child')}}">Bambini</a>
+          </li>
         </ul>
       </div>
       <div class="header-middle">

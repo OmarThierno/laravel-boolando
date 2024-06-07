@@ -21,13 +21,17 @@ header {
           list-style-type: none;
           @include flex($content:start);
           gap: 10px;
-  
-          .active {
+
+          li {
             &:hover {
               color: rgb(193, 193, 193);
               margin-bottom: -2px;
               border-bottom: 2px solid rgb(82, 82, 255);
             }
+          }
+  
+          .active {
+            color: brown;
           }
         }
     
