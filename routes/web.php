@@ -14,7 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $products = config("products.products");
+    // dd($products);
+    $data = [
+        'products' => $products
+    ];
+    return view('home', $data);
 })->name('home');
 
 Route::get('/donna', function () {

@@ -1,5 +1,7 @@
-@use "./partials/header" as *;
 @use "./partials/mixins" as *;
+@use "./partials/header" as *;
+@use "./partials/home_main" as *;
+
 
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 
@@ -16,4 +18,14 @@
 a {
   color: inherit;
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 70%;
+  max-width: 1200px;
+  margin: 0 auto;
 }

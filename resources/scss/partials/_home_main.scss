@@ -1,0 +1,66 @@
+@use "./mixins" as *;
+
+.main-home {
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  .container {
+
+    .row {
+      @include flex();
+      gap: 20px;
+
+      .col {
+        width: calc(100% / 3 - 60px / 3);
+
+        .card {
+          .img-container {
+            position: relative;
+
+            .back {
+              display: none;
+            }
+
+            &:hover .front {
+              display: none;
+            }
+
+            &:hover .back {
+              display: inline-block;
+            }
+
+            .badges {
+              position: absolute;
+              bottom: 20px;
+              left: 0;
+
+              .badge {
+                color: white;
+                padding: 5px;
+              }
+
+              .red {
+                background-color: red;
+              }
+
+              .green {
+                background-color: green;
+              }
+            }
+          }
+
+          .card-body {
+            .color-red {
+              font-weight: 700;
+              color: red;
+            }
+          }
+
+          .line-through {
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+  }
+}

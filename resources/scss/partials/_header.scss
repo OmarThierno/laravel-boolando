@@ -7,9 +7,6 @@ header {
   color: white;
   
   .container {
-    width: 70%;
-    max-width: 1200px;
-    margin: 0 auto;
 
     nav {
       @include flex($content:space-between);
